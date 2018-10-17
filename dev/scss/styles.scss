@@ -167,3 +167,113 @@ span.dot {
 
 	}
 }
+
+//sidebar
+
+.add-book {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 35px 20px 41px 20px;
+	background-color: #1f2637;
+	border-bottom: 1px solid #141824;;
+	button {
+		width: 160px;
+		height: 44px;
+		border-radius: 4px;
+		background-color: #f2795a;
+		outline: none;
+		border: none;
+		cursor: pointer;
+		font-size: 14px;
+		font-family: ProximaNovaBold;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: bold;
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+
+.line {
+	height: 4px;
+	background-color: #181e2c;
+}
+
+//menu
+
+nav.navigation {
+	border-top: 1px solid #78829d; 
+	border-bottom: 1px solid #141824;; 
+}
+
+ul#menu {
+	li {
+		background-color: #1f2637;
+		padding: 15px 21px;
+		&:hover {
+			background-color: #15a4fa;
+			color: #fff;
+			i {
+				color: #fff;
+			}
+		}
+		a {
+			margin-left: 12px;
+		}
+		i {
+			color: #78829d;
+			font-size: 14px;
+		}
+	}
+}
+
+
+//footer
+
+footer {
+	background-color: #181e2c;
+	height: 45px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.fa-question-circle, .fa-cog{
+	font-size: 16px;
+	color: #fff;
+}
+
+.questions {
+	background-color: #1f2637;
+}
+
+.tools {
+	background-color: #15a4fa;
+}
+
+.tools, .questions {
+	width: 55px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+
+//grid
+
+@media only screen and (min-width:  768px) {
+	.col-1-6 {
+		flex-basis: 16.66%;
+		max-width: 16.66%;
+	}
+	.col-5-6 {
+		flex-basis: 83.33%;
+		max-width: 83.33%;
+	}
+	.wrapper {
+		display: flex;
+	}
+}
