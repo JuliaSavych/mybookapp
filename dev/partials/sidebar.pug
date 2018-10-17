@@ -5,7 +5,7 @@
 			|Add a book
 	.line
 	nav.navigation
-		ul#menu
+		ul.menu
 			li
 				i.fas.fa-book
 				a(href="#") Now Reading
@@ -25,4 +25,33 @@
 				i.far.fa-clock
 				a(href="#") History
 	.line
+	nav.navigation
+		ul.favourites
+			li
+				span.dot-little.dot_pink
+				a(href="#") Must Read Titles
+			li
+				span.dot-little.dot_orange
+				a(href="#") Best Of List
+			li
+				span.dot-little.dot_blue
+				a(href="#") Classic Novels
+			li
+				span.dot-little.dot_violet
+				a(href="#") Non Fiction
+	.line
+	nav.navigation
+		ul.reset
+			li
+				i.far.fa-clock
+				span.text You added #[strong Fight Clud] by #[strong Chuck Palahniuk] to your #[strong Must Read Titles] 
+				span.time
+					//- |24 minutes ago
+			li
+				i.far.fa-clock
+				span.text You added #[strong Fight Clud] by #[strong Chuck Palahniuk] to your #[strong Must Read Titles] 
+				//- span.time
+				//- 	|24 minutes ago
+
+
 
