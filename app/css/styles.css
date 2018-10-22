@@ -13,6 +13,13 @@ body {
   font-family: ProximaNovaRegular;
   color: #78829d; }
 
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%; }
+
 @font-face {
   font-family: ProximaNovaBold;
   src: url(../fonts/ProximaNova-Bold.ttf); }
@@ -393,6 +400,26 @@ ul.resent {
         .sort-books ul li a:hover {
           color: #fff; }
 
+@media only screen and (min-width: 320px) {
+  .sort-books {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .top-panel {
+    text-align: center; } }
+
+@media only screen and (min-width: 768px) {
+  .sort-books {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .top-panel {
+    text-align: left; } }
+
 .search {
   margin: 8px 20px 8px 5px; }
   .search form {
@@ -422,11 +449,11 @@ ul.resent {
       font-size: 14px;
       color: #8c97b2; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .search form input {
     width: 400px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 899px) {
   .search form input {
     width: 200px; } }
 
@@ -490,6 +517,21 @@ figure.book {
     -ms-flex-align: center;
     align-items: center; } }
 
+@media only screen and (min-width: 320px) {
+  figure.book {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
 .footer {
   background-color: #181e2c;
   height: 45px;
@@ -533,6 +575,22 @@ figure.book {
   align-items: center;
   cursor: pointer; }
 
+@media only screen and (min-width: 320px) {
+  .col-1-1 {
+    padding: 15px 5px;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%; } }
+
+@media only screen and (min-width: 468px) {
+  .col-1-2 {
+    padding: 15px 5px;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 50%; } }
+
 @media only screen and (min-width: 768px) {
   .col-1-6 {
     -webkit-flex-basis: 16.66%;
@@ -544,22 +602,24 @@ figure.book {
     -ms-flex-preferred-size: 83.33%;
     flex-basis: 83.33%;
     max-width: 83.33%; }
-  .wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    min-height: 100%; }
   .col-1-3 {
     -webkit-flex-basis: 33.33%;
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
     max-width: 33.33%;
-    padding: 15px 10px; } }
+    padding: 15px 5px; } }
+
+@media only screen and (min-width: 1060px) {
+  .col-1-4 {
+    padding: 30px 5px;
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%; } }
 
 @media only screen and (min-width: 1280px) {
   .col-1-5 {
-    padding: 15px 10px;
+    padding: 30px 10px;
     -webkit-flex-basis: 20%;
     -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
