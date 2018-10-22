@@ -29,3 +29,8 @@ $('.range-raiting').click(function(e){
   thisWidth = $(this).width();
   $(this).find('input').val(rateThis($(this).width(),pos))
 })
+
+$('.sidebar-btn').click(function(){
+  $('.sidebar-btn').toggleClass('active');
+  $('.sidebar').toggleClass('active');
+})
