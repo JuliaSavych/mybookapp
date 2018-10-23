@@ -1,0 +1,140 @@
+header {
+	display: flex;
+	height: 60px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #2f364a;
+	flex-wrap: wrap;
+	flex-grow: 2;
+	&>* {
+		padding: 20px;
+	}
+	span.dot {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		margin-right: 5px;
+	}
+}
+
+.header-left {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.support {
+		a {
+			margin-right: 40px;
+		}
+	}
+}
+
+.fa-book {
+	font-size: 13px;
+	color: #78829d;
+	margin-right: 7px;
+}
+
+.dot_orange {
+	background-color: #e76847;
+}
+
+.dot_yellow {
+	background-color: #fabf00;
+}
+
+.dot_blue {
+	background-color: #52bea6;
+}
+
+.dot_pink {
+	background-color: #e64c66;
+}
+
+.dot_violet {
+	background-color: #7874cf;
+}
+
+.user-account {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-grow: 0;
+	width: 160px;
+	background-color: #15a4fa;
+	padding: 7px 12px;
+	&__img {
+		margin-right: 10px;
+		img {
+			width: 31px;
+			height: 32px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+		}
+	}
+	&__name {
+		color: #fff;
+		margin-right: 10px;
+	}
+	&__btn-more {
+		position: relative;
+		width: 12px;
+		height: 12px;
+		background-color: #fff;
+		border-radius: 50%;
+		cursor: pointer;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 2px;
+			left: 3px;
+			width: 4px;
+			height: 4px;
+			border-left: 2px solid #15a4fa;
+			border-bottom: 2px solid #15a4fa;
+    		transform: rotate(-45deg);
+		}
+	}
+}
+
+@media only screen and (max-width:  768px) {
+	.header {
+		justify-content: center;
+		flex-direction: column;
+		height: 110px;
+		&>* {
+			padding: 10px;
+		}
+	}
+	.header-right {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		.support {
+			a:first-child {
+				margin-right: 40px;
+			}
+		}
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	.user-account {
+		width: 100%;
+		justify-content: center;
+
+	}
+}
